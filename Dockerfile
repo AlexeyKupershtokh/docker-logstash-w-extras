@@ -4,7 +4,7 @@ MAINTAINER Alexey Kupershtokh <alexey.kupershtokh@gmail.com>
 
 ENV LOGSTASH_VERSION 1.5.0-rc3
 
-RUN curl -s "https://download.elasticsearch.org/logstash/logstash/logstash-${LOGSTASH_VERSION}.tar.gz" | \
+RUN curl -s "https://download.elastic.co/logstash/logstash/logstash-${LOGSTASH_VERSION}.tar.gz" | \
     tar xz -C /opt && \
     mv "/opt/logstash-${LOGSTASH_VERSION}" /opt/logstash
 
